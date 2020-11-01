@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+body {
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro';
+}
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.socialButtons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+.socialButtons a {
+    margin-left: 15px;
+    color: grey;
+    text-decoration: none;
+}
+.socialButtons a:visited {
+    color: grey;
+    text-decoration: none;
+}
+.socialButtons a:active, .socialButtons a:hover {
+    color: #c1c1c1;
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: white;
+}
+.headerChild {
+    display: flex;
+    flex-direction: row;
+}
+.headerChild div, .headerChild img {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.breif {
+    padding: 15px;
+    display: flex;
+    background-color: white;
+}
+.avatar {
+    width: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.nameTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.nameTitle h1 {
+    font-size: 28px;
+    color: #444245;
+    margin: 0;
+}
+.nameTitle h2 {
+    font-size: 18px;
+    color: #4a9bc7;
+    margin: 0;
+}
+.keys, .values {
+    display: flex;
+}
+.keys ul, .values ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.keys ul li{
+    text-align: right;
+}
+.values ul li{
+    text-align: left;
+}
+.values ul li a, .values ul li a:hover, .values ul li a:visited, .values ul li a:active {
+    text-decoration: none;
+    color: #4a9bc7;
+}
+.mainContent {
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-left: 15%;
+    width: 70%;
+    float: left;
+    background-color: white;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.sideContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+    width: 35%;
+}
+.mainMainContent {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    width: 65%;
+}
+.widget {
+    margin-bottom: 40px;
+}
+.widget h1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.widget ul {
+    list-style: none;
+    padding-left: 5px;
+}
+.programmingSkill h2, .graphicSkill h2, .languageSkill h2 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+.skillProgress {
+    display: flex;
+    flex-direction: row;
+}
+.graphicSkill {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.graphicSkill h2 {
+    padding-left: 10px;
+}
+.languageSkill {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.languageSkillRating {
+    display: flex;
+    flex-direction: row;
+}
+.languageSkillRating i {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.sectionHeader {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: rgb(27, 22, 46);
+    padding-left: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.partOfSection {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.partOfSectionHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.partOfSectionTitle, .partOfSectionInterval {
+    font-size: 18px;
+}
+.partOfSectionInterval {
+    color: #808080;
+}
+#section2 i {
+    color: rgb(15, 184, 119);
+}
+#section2 .sectionHeader i {
+    color: white;
+    padding: 6px;
+    background-color: rgb(15, 184, 119);
+}
+#section1 i {
+    color: rgb(39, 134, 189);
+}
+#section1 .sectionHeader i {
+    color: white;
+    padding: 6px;
+    background-color: rgb(39, 134, 189);
+}
+#printer {
+    color: whitesmoke;
+    margin-top: 3px;
+    width: 3erms;
+    height: 3erms;
+    float: left;
+    padding: 12px;
+    background-color: rgb(15, 184, 119);
+}
+#print, #print:active, #print:hover, #print:visited {
+    text-decoration: none;
+}
+#printer:hover {
+    background-color: rgb(90, 202, 159);
+}
+.partOfSectionTitleSecondary {
+    font-size: 14px;
+    font-weight: bold;
+    color: #808080;
+}
