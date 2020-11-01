@@ -171,8 +171,13 @@ body {
 .sectionHeader {
     font-size: 24px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
     background-color: rgb(27, 22, 46);
     padding-left: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
     color: white;
     border-radius: 5px;
 }
@@ -192,12 +197,19 @@ body {
 .partOfSectionInterval {
     color: #808080;
 }
+.sectionHeader i {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 #section2 i {
     color: rgb(15, 184, 119);
 }
 #section2 .sectionHeader i {
     color: white;
-    padding: 6px;
     background-color: rgb(15, 184, 119);
 }
 #section1 i {
@@ -205,7 +217,6 @@ body {
 }
 #section1 .sectionHeader i {
     color: white;
-    padding: 6px;
     background-color: rgb(39, 134, 189);
 }
 #printer {
