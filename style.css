@@ -29,6 +29,10 @@ body {
     color: #c1c1c1;
     text-decoration: none;
 }
+.socialButtons a:active, .socialButtons a:hover, .socialButtons a:visited, .socialButtons a {
+    transition: color 0.25s;
+    transition-timing-function: ease;
+} 
 .header {
     display: flex;
     flex-direction: row;
@@ -70,25 +74,51 @@ body {
     color: #4a9bc7;
     margin: 0;
 }
-.keys, .values {
-    display: flex;
+#headerInfo {
+    width: 40%;
 }
-.keys ul, .values ul {
+#headerInfo ul {
+    list-style-type: none;
     display: flex;
-    padding: 0;
-    list-style: none;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
-.keys ul li{
+#headerInfo ul li {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.key, .value {
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+}
+.key {
+    width: 35%;
+    margin-right: 1%;
+    font-weight: bold;
     text-align: right;
 }
-.values ul li{
+.value {
+    width: 63%;
+    margin-left: 1%;
     text-align: left;
 }
-.values ul li a, .values ul li a:hover, .values ul li a:visited, .values ul li a:active {
+.value a, .value a:visited, .value a:active {
     text-decoration: none;
     color: #4a9bc7;
+    transition: color 0.25s;
+    transition-timing-function: ease;
+}
+.value a:hover {
+    text-decoration: none;
+    color: #80bedf;
+    transition: color 0.25s;
+    transition-timing-function: ease;
 }
 .mainContent {
     margin-top: 3px;
@@ -233,6 +263,10 @@ body {
 }
 #printer:hover {
     background-color: rgb(90, 202, 159);
+}
+#printer, #printer:hover {
+    transition: background-color 0.25s;
+    transition-timing-function: ease;
 }
 .partOfSectionTitleSecondary {
     font-size: 14px;
