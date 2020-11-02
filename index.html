@@ -2,9 +2,32 @@
 <html>
     <head>
         <title>Mazen Amria</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href="css/all.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script>
+            $(function () {
+                $(document).ready(function () {
+                    var $skills = $(".skillProgress, .languageSkillRating");
+                    $skills.each(function () {
+                        //alert($(this).position.top);
+                        $(this).toggleClass('viewed', $(document).scrollTop() <= $(this).position().top + $(this).height()
+                        && $(document).scrollTop() + $(window).height() >= $(this).position().top);
+                    });
+                });
+            });
+            $(function () {
+                $(document).scroll(function () {
+                    var $skills = $(".skillProgress, .languageSkillRating");
+                    $skills.each(function () {
+                        //alert($(this).position.top);
+                        $(this).toggleClass('viewed', $(document).scrollTop() <= $(this).position().top + $(this).height()
+                        && $(document).scrollTop() + $(window).height() >= $(this).position().top);
+                    });
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="container">
@@ -124,23 +147,23 @@
                         <ul>
                             <li class="programmingSkill">
                                 <h2>C++</h2>
-                                <div class="skillProgress">
-                                    <div class="w3-green" style="width: 60%;text-align: right;height: 24px;padding-right: 5px;">60%</div>
-                                    <div class="w3-light-grey" style="width: 40%;height: 24px;"></div>
+                                <div class="skillProgress" id="cpp">
+                                    <div class="w3-green w-anim main-w">60%</div>
+                                    <div class="w3-light-grey w-anim sec-w"></div>
                                 </div>
                             </li>
                             <li class="programmingSkill">
                                 <h2>Java</h2>
-                                <div class="skillProgress">
-                                    <div class="w3-blue" style="width: 50%;text-align: right;height: 24px;padding-right: 5px;">50%  </div>
-                                    <div class="w3-light-grey" style="width: 50%;height: 24px;"></div>
+                                <div class="skillProgress" id="java">
+                                    <div class="w3-blue w-anim main-w">50%</div>
+                                    <div class="w3-light-grey w-anim sec-w"></div>
                                 </div>
                             </li>
                             <li class="programmingSkill">
                                 <h2>Python</h2>
-                                <div class="skillProgress">
-                                    <div class="w3-red" style="width: 20%;text-align: right;height: 24px;padding-right: 5px;">20%  </div>
-                                    <div class="w3-light-grey" style="width: 80%;height: 24px;"></div>
+                                <div class="skillProgress" id="python">
+                                    <div class="w3-red w-anim main-w">20%</div>
+                                    <div class="w3-light-grey w-anim sec-w"></div>
                                 </div>
                             </li>
                         </ul>
@@ -167,22 +190,24 @@
                         <ul>
                             <li class="languageSkill">
                                 <h2>English</h2>
-                                <div class="languageSkillRating">
-                                    <i class="fas fa-circle fa-lg" style="color:rgb(214, 211, 43);"></i>
-                                    <i class="fas fa-circle fa-lg" style="color:rgb(214, 211, 43);"></i>
-                                    <i class="fas fa-circle fa-lg" style="color:rgb(214, 211, 43);"></i>
-                                    <i class="far fa-circle fa-lg" style="color:#F1F1F1;"></i>
-                                    <i class="far fa-circle fa-lg" style="color:#F1F1F1;"></i>
+                                <div class="languageSkillRating" id="english">
+                                    <!--rgb(214, 211, 43)-->
+                                    <i class="fas fa-circle fa-lg m1"></i>
+                                    <i class="fas fa-circle fa-lg m2"></i>
+                                    <i class="fas fa-circle fa-lg m3"></i>
+                                    <i class="fas fa-circle fa-lg m4"></i>
+                                    <i class="fas fa-circle fa-lg m5"></i>
                                 </div>
                             </li>
                             <li class="languageSkill">
                                 <h2>Arabic</h2>
-                                <div class="languageSkillRating">
-                                    <i class="fas fa-circle fa-lg" style="color: rgb(15, 184, 119);"></i>
-                                    <i class="fas fa-circle fa-lg" style="color: rgb(15, 184, 119);"></i>
-                                    <i class="fas fa-circle fa-lg" style="color: rgb(15, 184, 119);"></i>
-                                    <i class="fas fa-circle fa-lg" style="color: rgb(15, 184, 119);"></i>
-                                    <i class="far fa-circle fa-lg" style="color:#F1F1F1;"></i>
+                                <div class="languageSkillRating" id="arabic">
+                                    <!--rgb(15, 184, 119)-->
+                                    <i class="fas fa-circle fa-lg m1"></i>
+                                    <i class="fas fa-circle fa-lg m2"></i>
+                                    <i class="fas fa-circle fa-lg m3"></i>
+                                    <i class="fas fa-circle fa-lg m4"></i>
+                                    <i class="fas fa-circle fa-lg m5"></i>
                                 </div>
                             </li>
                         </ul>

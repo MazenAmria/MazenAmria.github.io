@@ -273,3 +273,59 @@ body {
     font-weight: bold;
     color: #808080;
 }
+.main-w {
+    width: 0%;
+    text-align: right;
+    height: 24px;
+    padding-right: 5px;
+}
+.sec-w {
+    width: 100%;
+    height: 24px;
+}
+#cpp.viewed .main-w {
+    width: 60% !important;
+}
+#cpp.viewed .sec-w {
+    width: 40% !important;
+}
+#java.viewed .main-w {
+    width: 50% !important;
+}
+#java.viewed .sec-w {
+    width: 50% !important;
+}
+#python.viewed .main-w {
+    width: 20% !important;
+}
+#python.viewed .sec-w {
+    width: 80% !important;
+}
+.w-anim {
+    transition: width 0.25s;
+    transition-timing-function: ease;
+}
+.languageSkillRating i {
+    color: #F1F1F1;
+}
+#english.viewed .m1, #english.viewed .m2, #english.viewed .m3 {
+    color: rgb(214, 211, 43);
+} 
+#arabic.viewed .m1, #arabic.viewed .m2, #arabic.viewed .m3, #arabic.viewed .m4 {
+    color: rgb(15, 184, 119);
+}
+.languageSkillRating.viewed .m1{
+    transition: color 0.05s ease 0s;
+}
+.languageSkillRating.viewed .m2{
+    transition: color 0.05s ease 0.05s;
+}
+.languageSkillRating.viewed .m3{
+    transition: color 0.05s ease 0.1s;
+}
+.languageSkillRating.viewed .m4{
+    transition: color 0.05s ease 0.15s;
+}
+.languageSkillRating.viewed .m5{
+    transition: color 0.05s ease 0.2s;
+}
